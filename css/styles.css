@@ -1,0 +1,130 @@
+/******** Universal-Styles *******/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(212,214,221);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    background-color: #FBFCF8;
+    width: 80vw;
+    padding: 20px;
+}
+
+/******** Adding-Styles-To-Input-Field *******/
+
+#container .input-field{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+}
+
+#container .input-field input{
+    width: 100%;
+    padding: 10px 50px;
+    font-size: 1.4rem;
+}
+
+#input-btn{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+/******** Adding-Styles-To-todoList *******/
+
+#todo-lists-block{
+    border: #000 solid;
+    border-width: 1px 0;
+    margin: 14px 0;
+    padding: 20px;
+}
+
+#todo-lists-block .todo-lists{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+#todo-lists-block .todo-lists div{
+    overflow: hidden;
+    width: 80%;
+}
+
+#todo-lists-block .todo-lists h3{
+    display: inline-block;
+    margin-left: 20px;
+    width: 80%;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+
+.todo-lists-bottom-ctn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-lists-top-ctn{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.todo-lists-top-ctn div p{
+    display: inline-block;
+}
+
+/********Adding-Style to Icons*******/
+
+.todo-lists .fa-regular.fa-circle-xmark{
+    display: none;
+}
+
+.todo-lists:hover .fa-regular.fa-circle-xmark{
+    display: block;
+}
+
+.input-field .fa-regular.fa-note-sticky{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/********Common Styles*******/
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+/********Styles to smaller screen size*******/
+
+@media screen and (max-width: 600px) {
+    #container{
+        width: 100vw;
+    }
+
+    #todo-lists-block{
+        padding: 8px;
+    }
+
+    .fa-regular.fa-circle-xmark{
+        display: block;
+    }
+}

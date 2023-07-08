@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+    <!-----Favicon----->
+    <link rel="icon" type="image/x-icon" href="/todo-list-favicon.png">
+    <!-----Adding-Custom-Style----->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-----Adding-Font-Awesome----->
+    <script src="https://kit.fontawesome.com/87db41359c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+
+        <!-----ToDo-List Input Field------>
+        <div class="input-field">
+            <i class="fa-regular fa-note-sticky"></i>
+            <input value="" type="text" placeholder="Add-todo-list.."/>
+            <div id="input-btn" class="clickable">
+                <i class="fa-regular fa-square-plus"></i>
+            </div>
+        </div>
+
+        <!-----ToDo-List Top Tab------>
+        <div class="todo-lists-top-ctn">
+            <div class="completeAlltasks clickable" onclick="completeAlltasks()">
+                <i class="fa-solid fa-check-double"></i>
+                <p>Complete all tasks</p>
+            </div>
+            <p class="clickable" onclick="clearCompleted()">Clear Completed</p>
+        </div>
+
+        <!-----ToDo-List Content Block, which is rendered from the JS------>
+        <div id="todo-lists-block"></div>
+
+        <!-----ToDo-List bottom Tab------>
+        <div class="todo-lists-bottom-ctn">
+            <p>0 tasks left</p>
+            <div>
+                <span>All</span>
+                <span>Uncomplete</span>
+                <span>Completed</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adding-Custom-Js-Script -->
+    <script src="js/index.js">
+    </script>
+</body>
+</html>
